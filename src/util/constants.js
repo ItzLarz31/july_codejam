@@ -1,0 +1,42 @@
+export const recommendations = [
+  {
+    id: 1,
+    category: "outdoor",
+    name: "Ocean",
+    priceLevel: 3,
+    image: "insert image here",
+    info: "It's a big ocean with lots of fish",
+  },
+  {
+    id: 2,
+    category: "indoor",
+    name: "Disney World",
+    priceLevel: 3,
+    image: "insert image here",
+    info: "It's a big theme park with lots of rides",
+  },
+  {
+    id: 3,
+    category: "drinks",
+    name: "Lemonade",
+    priceLevel: 3,
+    image: "insert image here",
+    info: "Refreshing and cool",
+  },
+  {
+    id: 4,
+    category: "food",
+    name: "Ice Cream",
+    priceLevel: 3,
+    image: "insert image here",
+    info: "Delicious and cold",
+  },
+  {
+    id: 5,
+    category: "indoor",
+    name: "Air Conditioning",
+    image: "insert image here",
+    priceLevel: 3,
+    info: "Stay cool indoors",
+  },
+];

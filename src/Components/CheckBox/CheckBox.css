@@ -1,0 +1,35 @@
+.selection__checkbox {
+  display: none;
+}
+.selection__label,
+.section__submit-btn {
+  padding: 10px 20px;
+  background-color: #ff9c64;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  width: 90px;
+  height: 27px;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Signika";
+}
+.section__submit-btn {
+  width: 180px;
+  height: 53px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid #ff9c64;
+  font-family: "Signika";
+}
+.container {
+  border: none;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}

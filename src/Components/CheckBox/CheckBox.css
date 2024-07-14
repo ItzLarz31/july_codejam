@@ -16,6 +16,7 @@
   margin-bottom: 10px;
   font-family: "Signika";
 }
+
 .selected {
   padding: 10px 20px;
   background-color: #ff9c64;
@@ -31,6 +32,12 @@
   margin-bottom: 10px;
   font-family: "Signika";
 }
+
+.selection__label:hover {
+  background-color: #ff9c64;
+  color: white;
+}
+
 .section__submit-btn {
   width: 180px;
   height: 53px;
@@ -39,6 +46,11 @@
   border-radius: 5px;
   border: 2px solid #ff9c64;
   font-family: "Signika";
+}
+
+.section__submit-btn:hover {
+  background-color: #ff9c64;
+  color: white;
 }
 .container {
   border: none;

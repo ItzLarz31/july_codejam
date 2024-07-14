@@ -1,10 +1,7 @@
-import { useState } from "react";
-import reactLogo from "../../assets/react.svg";
-import viteLogo from "../../assets/vite.svg";
-import { recommendations } from "../../util/constants";
-import "./Card.css"; // Ensure to have your Card component styles imported or defined
+import React from "react";
+import "./Card.css";
 
-const Card = () => {
+const Card = ({ recommendations }) => {
   return (
     <div className="cards">
       {recommendations.map((recommendation) => (

@@ -1,16 +1,14 @@
-import { useState } from "react";
-import reactLogo from "../../assets/react.svg";
-import viteLogo from "../../assets/vite.svg";
 import "./App.css";
-import CheckBox from "../CheckBox/CheckBox";
-import Card from "../Card/Card";
-
+import Main from "../Main/Main";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 
 function App() {
   return (
     <>
-      <CheckBox></CheckBox>
-      <Card />
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 }

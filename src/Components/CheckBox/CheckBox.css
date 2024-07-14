@@ -46,6 +46,7 @@
   border-radius: 5px;
   border: 2px solid #ff9c64;
   font-family: "Signika";
+  padding-bottom: 20px;
 }
 
 .section__submit-btn:hover {

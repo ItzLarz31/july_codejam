@@ -2,7 +2,7 @@
 Not sure what to do this summer or have a tight budget? Summer Adventure '24 helps you make this summer great by filtering activities by cost, location, and more. 
 Try out Summer Adventure '24 and receive a curated list of popular activities based on your choices!
 
-[view the website here](https://summeradventure.netlify.app/)
+[View the website here](https://summeradventure.netlify.app/)
 
 ## Technologies Used
 

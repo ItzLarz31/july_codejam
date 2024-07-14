@@ -22,13 +22,23 @@ const Main = () => {
 
     setSelectedFilters((prevFilters) => {
       const updatedFilters = { ...prevFilters };
+
       if (checked) {
         updatedFilters[name].push(id);
       } else {
         updatedFilters[name] = updatedFilters[name].filter(
-          (filter) => filter !== id
+          (item) => item !== id
         );
       }
+
+      // Logic to handle unchecking other options
+      if (name === "food" || name === "drinks") {
+        updatedFilters.location = [];
+      } else if (name === "location") {
+        updatedFilters.food = [];
+        updatedFilters.drinks = [];
+      }
+
       return updatedFilters;
     });
 
@@ -42,6 +52,14 @@ const Main = () => {
     event.preventDefault();
     setFilteredRecommendations(filterRecommendations());
     setShowCards(true);
+    // Clear all selected options
+    setSelectedFilters({
+      budget: [],
+      location: [],
+      food: [],
+      drinks: [],
+    });
+    setSelectedCheckboxes({});
   };
 
   const filterRecommendations = () => {

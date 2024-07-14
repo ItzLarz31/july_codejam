@@ -18,7 +18,7 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-html {
+#root {
   height: 100%;
   background: linear-gradient(#ffffff, #fde5d3) no-repeat;
 }

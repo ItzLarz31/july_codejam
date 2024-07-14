@@ -5,17 +5,20 @@ Try out Summer Adventure '24 and receive a curated list of popular activities ba
 [view the website here](https://summeradventure.netlify.app/)
 
 ## Technologies Used
-React
-Javascript
-Vite
-HTML
-CSS
-Flexbox
-Git/Github
-Netlify
+
+- React
+- JavaScript
+- Vite
+- HTML
+- CSS
+- Flexbox
+- Git/GitHub
+- Netlify
 
 ### Local Deployment
--- Clone or download this repo
--- Open this repo in Visual Studio Code
--- In the terminal within Visual Studio Code, type npm install
--- After that command finishes executing, type in npm run dev to see the website.
+
+1. Clone or download this repo.
+2. Open this repo in Visual Studio Code.
+3. In the terminal within Visual Studio Code, type `npm install`.
+4. After the command finishes executing, type `npm run dev` to see the website.
+

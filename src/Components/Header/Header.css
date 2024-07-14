@@ -3,3 +3,7 @@
   font-family: "Karla-Light";
   padding-bottom: 20px;
 }
+.header__subtitle {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}

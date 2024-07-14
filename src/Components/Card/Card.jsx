@@ -9,11 +9,18 @@ const Card = () => {
     <div className="cards">
       {recommendations.map((recommendation) => (
         <div className="card" key={recommendation.id}>
-          <img className="card__picture" src={recommendation.image} alt={recommendation.name} />
+          <h2 className="card__name">{recommendation.name}</h2>
+          <img
+            className="card__picture"
+            src={recommendation.image}
+            alt={recommendation.name}
+          />
           <p className="card__description">{recommendation.info}</p>
           <p className="card__price-level">
             <strong>Price:</strong>{" "}
-            <span className="card__price-level-label">{recommendation.price}</span>
+            <span className="card__price-level-label">
+              {recommendation.price}
+            </span>
           </p>
         </div>
       ))}

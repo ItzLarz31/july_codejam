@@ -189,7 +189,7 @@ export const recommendations = [
     name: "Billiards",
     price: "mid",
     image: new URL("../assets/images/billiards.jpg", import.meta.url).href,
-    info: "Swim in a temperature-controlled environment.",
+    info: "Play some 8 ball with friends.",
     credit: `Photo by <a href="https://unsplash.com/@andreevaleksandar?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aleksandar Andreev</a> on <a href="https://unsplash.com/photos/a-pool-table-with-several-pool-balls-on-it-mjieNwWeY0Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
     `,
   },
@@ -544,6 +544,6 @@ export const filterRecommendations = (selectedCategories) => {
   }
 
   return recommendations.filter((recommendation) =>
-    selectedCategories.includes(recommendation.category) 
+    selectedCategories.includes(recommendation.category)
   );
 };

@@ -2,34 +2,51 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
 }
 .card {
-  margin: 10px;
   border: solid 1px #ea702b;
   width: 247px;
-  height: 202px;
+  height: 350px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
+
+.card__name {
+  font-size: 1rem;
+  font-family: "Karla-Bold";
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 .card__picture {
   border-radius: 12px;
-  height: auto;
+  height: 247px;
   width: 100%;
   object-fit: cover;
   overflow: hidden;
 }
 .card__description {
-  font-size: 0.75rem;
-  width: 55%;
+  font-size: 0.8rem;
   font-family: "Karla-Light";
 }
+
+.card__info {
+  display: flex;
+  gap: 5%;
+  width: 100%;
+  margin-top: 10px;
+}
+
 .card__price-level {
   display: flex;
   gap: 5%;
   align-self: flex-start;
+  margin: 0;
 }
 .card__price-level-label {
   margin-top: 0px;

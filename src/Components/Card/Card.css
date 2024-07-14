@@ -50,4 +50,6 @@
 }
 .card__price-level-label {
   margin-top: 0px;
+  color: #f96d1e;
+  font-weight: bold;
 }

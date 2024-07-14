@@ -16,7 +16,9 @@ const Card = ({ recommendations }) => {
           <p className="card__price-level">
             <strong>Price:</strong>{" "}
             <span className="card__price-level-label">
-              {recommendation.price}
+              {recommendation.price &&
+                recommendation.price.charAt(0).toUpperCase() +
+                  recommendation.price.slice(1)}
             </span>
           </p>
         </div>

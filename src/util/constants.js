@@ -538,3 +538,12 @@ export const recommendations = [
     `,
   },
 ];
+export const filterRecommendations = (selectedCategories) => {
+  if (!selectedCategories.length) {
+    return recommendations; // Return all recommendations if no categories are selected
+  }
+
+  return recommendations.filter((recommendation) =>
+    selectedCategories.includes(recommendation.category) 
+  );
+};

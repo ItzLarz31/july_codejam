@@ -1,12 +1,12 @@
-import { useState } from "react";
-import reactLogo from "../../assets/react.svg";
-import viteLogo from "../../assets/vite.svg";
+import React from "react";
 import "./CheckBox.css";
+import { handleCheckboxChange, handleSubmit } from "./checkBoxFunction"; 
+import { filterRecommendations } from '../../util/constants';
 
 export default function CheckBox() {
   return (
     <>
-      <form>
+      <form onSubmit={handleSubmit}>
         <fieldset className="container">
           <legend>Budget</legend>
 
@@ -14,8 +14,9 @@ export default function CheckBox() {
             <input
               className="selection__checkbox"
               type="checkbox"
-              id="budget"
+              id="low-cost"
               name="budget"
+              onChange={handleCheckboxChange}
             />
             <label className="selection__label" htmlFor="low-cost">
               Low-Cost
@@ -25,8 +26,9 @@ export default function CheckBox() {
             <input
               className="selection__checkbox"
               type="checkbox"
-              id="budget"
+              id="mid-cost"
               name="budget"
+              onChange={handleCheckboxChange}
             />
             <label className="selection__label" htmlFor="mid-cost">
               Mid-Cost
@@ -36,23 +38,26 @@ export default function CheckBox() {
             <input
               className="selection__checkbox"
               type="checkbox"
-              id="budget"
+              id="high-cost"
               name="budget"
+              onChange={handleCheckboxChange}
             />
             <label className="selection__label" htmlFor="high-cost">
               High-Cost
             </label>
           </div>
         </fieldset>
+        
+        {/* Location Selection */}
         <fieldset className="container">
           <legend>Location</legend>
-
           <div className="selection">
             <input
               className="selection__checkbox"
               type="checkbox"
-              id="location"
+              id="indoor"
               name="location"
+              onChange={handleCheckboxChange}
             />
             <label className="selection__label" htmlFor="indoor">
               Indoor
@@ -62,23 +67,26 @@ export default function CheckBox() {
             <input
               className="selection__checkbox"
               type="checkbox"
-              id="location"
+              id="outdoor"
               name="location"
+              onChange={handleCheckboxChange}
             />
             <label className="selection__label" htmlFor="outdoor">
               Outdoor
             </label>
           </div>
         </fieldset>
+        
+        {/* Other Selection */}
         <fieldset className="container">
           <legend>Other</legend>
-
           <div className="selection">
             <input
               className="selection__checkbox"
               type="checkbox"
-              id="other"
+              id="food"
               name="other"
+              onChange={handleCheckboxChange}
             />
             <label className="selection__label" htmlFor="food">
               Food
@@ -88,16 +96,21 @@ export default function CheckBox() {
             <input
               className="selection__checkbox"
               type="checkbox"
-              id="other"
+              id="other-outdoor"
               name="other"
+              onChange={handleCheckboxChange}
             />
-            <label className="selection__label" htmlFor="outdoor">
-              Outdoor
+            <label className="selection__label" htmlFor="other-outdoor">
+              Other Outdoor
             </label>
           </div>
         </fieldset>
+        
+        {/* Submit Button */}
+        <button type="submit" className="section__submit-btn">
+          Submit
+        </button>
       </form>
-      <button className="section__submit-btn">Submit</button>
     </>
   );
 }

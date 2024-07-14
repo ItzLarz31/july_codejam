@@ -4,6 +4,20 @@
 .selection__label,
 .section__submit-btn {
   padding: 10px 20px;
+  border: 1px solid #ff9c64;
+  color: #ff9c64;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  width: 90px;
+  height: 27px;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Signika";
+}
+.selected {
+  padding: 10px 20px;
   background-color: #ff9c64;
   color: white;
   border: none;
